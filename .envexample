@@ -1,0 +1,9 @@
+clientName = "name"
+password = "password"
+host = "host"
+dbName = "db"
+mnemonic = "mnemonic"
+blockcyohertoken = "token"
+bitcoinnettype = "test3"
+hashrateapikey = "key"
+BITCOIN_NET_TYPE_HASH = 0x6f

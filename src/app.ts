@@ -8,9 +8,8 @@ async function bootstrap() {
     const app = await NestFactory.create(AppModule, {
       logger: new LoggerService(),
     })
-    // const txService: TransactionService = app.get(TransactionService)
-    // await txService.txListen()
     console.log('App started')
+    app.enableCors()
     await app.listen(8888)
   } catch (error) {
     throw error

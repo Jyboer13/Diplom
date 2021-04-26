@@ -27,7 +27,7 @@ export class candidate extends Model<candidate> {
   public vacancy_id: string;
 
   @Column({ type: DataType.STRING })
-  public salary: Array<string>;
+  public salary: string;
 
   @Column({ type: DataType.STRING })
   public status_id: string;
@@ -35,26 +35,26 @@ export class candidate extends Model<candidate> {
   @Column({ type: DataType.STRING })
   public employment_type_id: string;
 
-  @Column({ type: DataType.STRING })
-  public experience_id: string;
+  @Column({ type: DataType.ARRAY(DataType.STRING) })
+  public experience_id: Array<string>;
 
-  @Column({ type: DataType.STRING })
-  public education_id: string;
+  @Column({ type: DataType.ARRAY(DataType.STRING) })
+  public education_id: Array<string>;
 
-  @Column({ type: DataType.STRING })
-  public languages_id: string;
+  @Column({ type: DataType.ARRAY(DataType.STRING)})
+  public languages_id: Array<string>;
 
-  @Column({ type: DataType.STRING })
-  public skills_id: string;
+  @Column({ type: DataType.ARRAY(DataType.STRING) })
+  public skills_id: Array<string>;
 
   @Column({ type: DataType.STRING })
   public response_type_id: string;
 
-  @Column({ type: DataType.STRING })
-  public contacts_id: string;
+  @Column({ type: DataType.ARRAY(DataType.STRING) })
+  public contacts_id: Array<string>;
 
-  @Column({ type: DataType.STRING })
-  public project_links: string;
+  @Column({ type: DataType.ARRAY(DataType.STRING) })
+  public project_links: Array<string>;
 
   @Column({ type: DataType.STRING })
   public manager_id: string;
